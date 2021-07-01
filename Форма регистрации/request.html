@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="./request.css">
+</head>
+<body>
+    <section class="request">
+        <div class="triangle-topleft"></div>
+        <div class="request__main">
+        <div>
+            <h2 class="request__main__title">Создайте <span class="colortext">собственный</span> аккаунт</h2>
+        </div>
+        <div>
+            <p class="request__main__subtitle">И получите еще больше <span class="colortext">возможностей</span>!</p>
+        </div>
+        <form class="request__main__form" id="request__form" novalidate>
+            <input class="request__main__form-input" type="text" placeholder="Имя*" id="firstName" required> 
+            <input class="request__main__form-input" type="text" placeholder="Фамилия" id="lastName">
+            <input class="request__main__form-input" type="date" id="date">
+            <input class="request__main__form-input" type="email" placeholder="Электронный адрес*" id="email" required>
+            <input class="request__main__form-input" type="password" placeholder="Пароль*" id="password" required>
+            <input class="request__main__form-input" type="password" placeholder="Подтвердить пароль*" id="password2" required>
+            <div id="errorMessage"></div>
+            <button class="button-request__btn" id="checkAll" type="submit">Зарегистрироваться</button>
+            <div id="done"></div>
+        </form> 
+        </div>
+    <div class="triangle-bottomright"></div>
+    </section>
+    <script src="./request.js"></script>
+</body>
+</html>

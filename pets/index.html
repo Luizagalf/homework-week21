@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мой питомец</title>
+    <link rel="icon" href="Assets/images/icon_violet_cat.svg"
+        type="png/svg">
+    <style>
+        input:required:valid {
+            border-color: green;
+        }
+        #result {
+            color: green;
+        }
+    </style>
+</head>
+
+<body style="background-color: blanchedalmond;">
+    <div class="container">
+    <h1 style="color: black;">Мой любимый питомец</h1>
+    <object type="image/png" data="Assets/images/black_cat.png" style="width:150px;">Ваш браузер не поддерживает такое подключение картинок
+    </object>
+    <form id="form">
+    <div><label><b>Кличка</b></label>
+        <span><input type="text" id="animal" name="animal" placeholder="Кличка"/></span></div>
+
+    <div><br><label for="breed"><b>Порода</b></label>
+        <select id="breed" name="breed">
+            <option name="breed" value="Персидская кошка">Персидская кошка</option>
+            <option name="breed" value="Сибирская кошка">Сибирская кошка</option>
+            <option name="breed" value="Экзотическая кошка">Экзотическая кошка</option>
+            <option name="breed" value="Мейн-кун">Мейн-кун</option>
+            <option name="breed"  value="Рэгдолл">Рэгдолл</option>
+            <option name="breed" value="Другая">Другая</option>
+        </select></div>
+
+    <div><br><b>Пол</b>
+        <span id="sex"><input type="radio" name="sex" id="female" value="female"/>
+                <label for="female">Самка</label>
+            <input type="radio" name="sex" id="male" value="male"/>
+                <label for="male">Самец</label></span>
+    </div>
+
+    <div class="container"><br>
+    <fieldset id="meal" style="background-color: #f7a60388;">
+        <legend><b>Чем питается Ваш питомец?</b></legend>
+        <input type="checkbox" name="meal" value="Сухой корм" id="food1" /> <label for="food1">Сухой корм</label><br />
+        <input type="checkbox" name="meal" value="Влажный корм" id="food2" /> <label for="food2">Влажный корм</label><br />
+        <input type="checkbox" name="meal" value="Натуральный корм" id="food3" /> <label for="food3">Натуральный корм</label><br/>
+    </fieldset></div>
+
+    <div><br><button type="submit" id="submit">Сохранить</button></div>
+    <div id="result"></div>
+    </form>
+    <div class="container"><br>
+        <img src="Assets/images/cats.gif" alt="cats">
+    </div>
+<script src="./index.js"></script>
+</body>
+
+</html>
