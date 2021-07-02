@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма поиска по GIF-кам</title>
     <style>
+        #result {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -15,6 +18,7 @@
         <input type="text" id="imgSearch">
         <button onclick="onSearch()" type="submit">Искать!</button>
     </div>
+    <div id="result"></div>
     <div id="gif"></div>
     <script src="index.js"></script>
 </body>
